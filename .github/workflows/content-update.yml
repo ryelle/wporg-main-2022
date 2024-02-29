@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   content-update:
-    if: github.repository_owner == 'WordPress'
+    if: github.repository_owner == 'ryelle'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -34,8 +34,8 @@ jobs:
       - name: Upload screenshots
         uses: actions/upload-artifact@v4
         with:
-          name: screenshot
-          path: "${GITHUB_WORKSPACE}/artifacts/"
+          name: screenshot-artifacts
+          path: $GITHUB_WORKSPACE/artifacts/
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
