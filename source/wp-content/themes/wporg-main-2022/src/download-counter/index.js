@@ -13,9 +13,12 @@ import metadata from './block.json';
 
 function Edit() {
 	const [ count, setCount ] = useState( '1,000,000' );
-	useEffect( async () => {
-		const realCount = await apiFetch( { path: '/wporg/v1/core-downloads/' } );
-		setCount( realCount );
+	useEffect( () => {
+		async function fetchCount() {
+			const realCount = await apiFetch( { path: '/wporg/v1/core-downloads/' } );
+			setCount( realCount );
+		}
+		fetchCount();
 	}, [] );
 
 	return <div { ...useBlockProps() }>{ count }</div>;
