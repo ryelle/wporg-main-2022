@@ -21,6 +21,7 @@ jobs:
       - name: Trim the repo down to just the theme
         run: |
           rm -rf source/wp-content/themes/wporg-main-2022/node_modules
+          mv extra/translation-strings.php source/wp-content/themes/wporg-main-2022/extra/translation-strings.php
           mv source/wp-content/themes/wporg-main-2022 $RUNNER_TEMP
           git rm -rfq .
           rm -rf *
