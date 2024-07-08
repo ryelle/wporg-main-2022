@@ -24,7 +24,7 @@
 
 <!-- wp:column {"width":"60%"} -->
 <div class="wp-block-column" style="flex-basis:60%"><!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0"}}},"className":"wporg-about-cover-intro","fontSize":"normal","fontFamily":"courier-prime"} -->
-<p class="wporg-about-cover-intro has-courier-prime-font-family has-normal-font-size" style="margin-top:0"><?php _e( '<span>the freedom to build.</span> <span>the freedom to change.</span> <span>the freedom to&nbsp;share.</span>', 'wporg' ); ?></p>
+<p class="wporg-about-cover-intro has-courier-prime-font-family has-normal-font-size" style="margin-top:0"><?php _e( '<span>!the freedom to build.</span> <span>the freedom to change.</span> <span>the freedom to&nbsp;share.</span>', 'wporg' ); ?></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
